@@ -31,5 +31,7 @@ module.exports = function(defaults) {
     app.import('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js');
     app.import('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js');
     app.import('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js');
+    app.import('bower_components/vegas/dist/vegas.js');
+    app.import('bower_components/vegas/dist/vegas.css');
     return app.toTree();
 };
