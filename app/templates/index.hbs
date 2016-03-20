@@ -1,32 +1,54 @@
-<div class="jumbotron" >
-<div class=" carousel slide carousel-fade" id="bg-fade-carousel" data-ride="carousel">
- <div class="carousel-inner">
- <div class="item active">
-   <div class="slide1 darken"></div>
- </div>
- <div class="item">
-   <div class="slide2 darken"></div>
- </div>
- <div class="item">
-   <div class="slide3 darken"></div>
- </div>
-</div> <!-- End carousel inner-->
-<div class="container carousel-overlay text-center">
- <!-- #F0626A -->
- <h2>Bhaduli</h2>
- <h3>The desire to reach for the stars is ambitious.</h3>
-    <h3>The desire to reach hearts is wise.</h3>
- <a href="" class="button center-block">
-   <span class="fa fa-sign-in">Sign Up</span>
- </a>
-</div>
-</div>
-</div><!-- End jumbotron-->
+<!-- Full Page Image Background Carousel Header -->
+  <header id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for Slides -->
+      <div class="carousel-inner">
+          <div class="item active">
+              <!-- Set the first background image using inline CSS below. -->
+              <div class="fill slide1"></div>
+              <div class="carousel-caption">
+                  <!-- <h2>Caption 1</h2> -->
+              </div>
+          </div>
+          <div class="item">
+              <!-- Set the second background image using inline CSS below. -->
+              <div class="fill slide2"></div>
+              <div class="carousel-caption">
+                  <!-- <h2>Caption 2</h2> -->
+              </div>
+          </div>
+          <div class="item">
+              <!-- Set the third background image using inline CSS below. -->
+              <div class="fill slide3"></div>
+              <div class="carousel-caption">
+                  <!-- <h2>Caption 3</h2> -->
+              </div>
+          </div>
+      </div>
+    {{#overlay-text}}
+    {{/overlay-text}}
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="icon-prev"></span>
+          <i class="fa fa-angle-left"></i>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="icon-next"></span>
+          <i class="fa fa-angle-right"></i>
+      </a>
+
+  </header>
+
 
 
 
 <section>
-<div class="container">
 <div class="page-header text-center">
  <h2>WiredTree History</h2>
 </div>
@@ -42,7 +64,6 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </p>
-</div>
 </section>
 
 <section class="section-feature">
@@ -86,9 +107,10 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
  <div id="text">
    <h1>RandomText</h1>
    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elite</h2>
-   <!-- <div class="mask"></div> -->
+   <div class="mask"></div>
  </div>
 </div>
+
 </div>
 
 <section class="logon-banner blue2_bg text-center">
