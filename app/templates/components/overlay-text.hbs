@@ -1,9 +1,12 @@
 <div class="container carousel-overlay text-center">
   <!-- #F0626A -->
-  <h2>Bhaduli</h2>
-  <h3>The desire to reach for the stars is ambitious.</h3>
-     <h3>The desire to reach hearts is wise.</h3>
-  <a href="" class="button center-block">
-    <span class="fa fa-sign-in">Sign Up</span>
-  </a>
+  <h1 class = "logo-word">Bhaduli.</h1>
+  <h3>One love, One heart, One destiny.</h3>
+     {{#if isRegistering}}
+     {{#popup-form}}
+     {{/popup-form}}
+     {{/if}}
+  <button id="reg-button" class="btn btn-info no-border-radius" {{action 'showForm'}}>
+Get Started
+  </button>
 </div>

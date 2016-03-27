@@ -415,12 +415,25 @@ body {
 
 	h2 {
 
-	font-family: 'Vitesse A','Vitesse B'; */
-	font-weight: 500;
-	font-style: normal;
+
 
 	}
 
+  .logo-word {
+    font-family: 'Pacifico', cursive;
+  	font-weight: 500;
+  	font-style: normal;
+    overflow: hidden;
+    margin: auto;
+    width: 232px;
+    height: 50px;
+    padding: 0;
+    border-bottom: 5px solid skyblue;
+}
+
+.blue-border {
+  border : 1px solid skyblue;
+}
 
 	/*.btn, .main-menu, .filter {
 	  font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -439,11 +452,11 @@ body {
   .carousel-overlay h3 {
 	  font-family: 'Pacifico', cursive;
 	   text-shadow: 0 5px rgba(0,0,0,0.1);
-	   color: white;
+	   color: black;
 	}
   .carousel-overlay {
 		position: absolute;
-		bottom: 100px;
+		bottom: 40%;
 		right: 0;
 		left: 0;
 	}
@@ -467,11 +480,19 @@ body {
   	    text-decoration: none !important;
   	    width: 180px;
   	}
+
+    .left-arrow {
+      background-image: url(arrows-1.png);
+    }
+    .right-arrow {
+      background-image: url(arrows-3.png);
+    }
+
     .slide1 {
-  	  background-image: url(slide1.jpg);
+  	  background-image: url(bg-1.jpg);
   	}
   	.slide2 {
-  	  background-image:url(slide2.jpg);
+  	  background-image:url(bg-2.jpg);
   	}
   	.slide3 {
   	  background-image:url(bg-3.jpg);
@@ -551,6 +572,7 @@ body {
 			color:white;
 	}
 	.page-header {
+    padding: 10px;
 	  border:none;
 	}
 	.icon-text {
@@ -646,6 +668,9 @@ min-height: 754px;
 .logon-banner h2{
 	color:white;
 }
+.carousel {
+  height: 95vh !important;
+}
 
 .carousel,
 .item,
@@ -667,11 +692,11 @@ min-height: 754px;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    -webkit-filter: blur(3px);
+    /*-webkit-filter: blur(3px);
     -moz-filter: blur(3px);
     -o-filter: blur(3px);
     -ms-filter: blur(3px);
-    filter: blur(3px);
+    filter: blur(3px);*/
 }
 
 footer {
@@ -681,4 +706,66 @@ footer {
 #landing-image {
 	height: 100% !important;
 	widows: 100% !important;
+}
+
+#reg-from {
+  width: 30%;
+  margin: auto auto auto 35%;
+}
+
+#reg-button {
+  height: 40px;
+width: 300px;
+}
+
+.no-border-radius {
+  border-radius: 0 !important;
+}
+
+.chevron{
+        width:20%;
+        position:absolute;
+        top:40%;
+      }
+
+      .chevron-left{left:5%;}
+      .chevron-right{right:5%;}
+
+.down-arrow {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    height: 50px;
+    width: 50px;
+    /*background-image: url('../images/chevron-down.png');*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 5;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    -webkit-transition: opacity .4s ease, bottom .2s ease;
+    -moz-transition: opacity .4s ease, bottom .2s ease;
+    -ms-transition: opacity .4s ease, bottom .2s ease;
+    -o-transition: opacity .4s ease, bottom .2s ease;
+    transition: opacity .4s ease, bottom .2s ease;
+}
+
+.intro {
+    bottom: -45px;
+    cursor: pointer;
+    font-weight: 800;
+    /*line-height: 45px;*/
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    height: 45px;
+    transition: bottom .3s ease-out 1.7s;
+}
+
+.second-page {
+  height: 100vh;
 }
