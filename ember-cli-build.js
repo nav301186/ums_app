@@ -33,5 +33,9 @@ module.exports = function(defaults) {
     app.import('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js');
     app.import('bower_components/gsap/src/uncompressed/plugins/ScrollToPlugin.js');
     app.import('bower_components/ihover/src/ihover.css');
+    app.import('bower_components/owlcarousel/owl-carousel/owl.carousel.js');
+    app.import('bower_components/owlcarousel/owl-carousel/owl.carousel.css');
+    app.import('bower_components/owlcarousel/owl-carousel/owl.carousel.css');
+    app.import('bower_components/owlcarousel/owl-carousel/owl.theme.css');
     return app.toTree();
 };
