@@ -5,13 +5,18 @@ export default Ember.Component.extend({
   didInsertElement() {
 
     $("#testimonial").owlCarousel({
-      // autoPlay: 3000,
+      autoPlay: 3000,
       navigation : true, // Show next and prev buttons
       slideSpeed : 300,
       paginationSpeed : 400,
       singleItem:true,
 
  });
+
+ $('#myCarousel').carousel({
+  interval: 3000,
+  cycle: true
+});
 
     var controller = new ScrollMagic.Controller({
         vertical:true,
@@ -27,12 +32,10 @@ export default Ember.Component.extend({
     ]);
     var scene = new ScrollMagic.Scene({triggerElement: "#with-background",triggerHook: 'onEnter', duration:1500, offset:20})
                 .setTween(tween)
-                // .setPin("#text")
                 .addTo(controller);
 
                 var scene = new ScrollMagic.Scene({triggerElement: "#with-background",triggerHook: 'onEnter', duration:1500, offset:20})
                             .setTween(tween)
-                            // .setPin("#text")
                             .addTo(controller);
 }
 });

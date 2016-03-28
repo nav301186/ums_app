@@ -1,0 +1,9 @@
+{
+  "firebase": "nav301186",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'ums-app',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://YOUR-FIREBASE-NAME.firebaseio.com/',
+    firebase: 'https://nav301186.firebaseio.com/#-KCyZAqq_LpXQRyigqWz|69fe8462b418939b2e2c1242bb42f4c8',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
