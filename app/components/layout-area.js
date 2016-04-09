@@ -1,5 +1,12 @@
 import Ember from 'ember';
 /* global $*/
+/* global TweenMax */
+/* global TweenLite */
+/* global ScrollMagic */
+/* global TimelineMax */
+/* global Linear */
+/* global Scene */
+/* global Power2 */
 
 export default Ember.Component.extend({
   didInsertElement() {
@@ -12,6 +19,8 @@ export default Ember.Component.extend({
       singleItem:true,
 
  });
+
+
 
  $('#myCarousel').carousel({
   interval: 3000,
@@ -30,12 +39,12 @@ export default Ember.Component.extend({
       TweenMax.to("#with-background", 3, {backgroundPosition: "0 300%", ease: Linear.easeNone}),
       TweenMax.to("#text", 3, {backgroundPosition: "0% 300%", ease: Linear.easeNone})
     ]);
+
     var scene = new ScrollMagic.Scene({triggerElement: "#with-background",triggerHook: 'onEnter', duration:1500, offset:20})
                 .setTween(tween)
                 .addTo(controller);
 
-                var scene = new ScrollMagic.Scene({triggerElement: "#with-background",triggerHook: 'onEnter', duration:1500, offset:20})
-                            .setTween(tween)
-                            .addTo(controller);
+                // TweenMax.fromTo("#login-form", 3, {opacity:0}, {opacity:1, ease:Expo.easeOut});
+
 }
 });

@@ -1,12 +1,9 @@
-<div class="container carousel-overlay text-center">
+<div id="login-form">
+<div class="container-fluid carousel-overlay text-center">
   <!-- #F0626A -->
   <h1 class = "logo-word">Bhaduli.</h1>
   <h3>Some awesome tagline.</h3>
-     {{#if isRegistering}}
-     {{#popup-form}}
-     {{/popup-form}}
-     {{/if}}
-  <button id="reg-button" class="btn btn-info no-border-radius" {{action 'showForm'}}>
-Get Started
-  </button>
+    {{popup-form id='reg-from'}}
+    {{button-couple param="#reg-from"}}
+</div>
 </div>

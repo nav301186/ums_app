@@ -20,8 +20,9 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+    app.import('bower_components/tether/dist/css/tether.css');
+    app.import('bower_components/tether/dist/js/tether.js');
     app.import('bower_components/bootstrap/dist/css/bootstrap.css');
-    app.import('bower_components/bootstrap/dist/css/bootstrap-theme.css');
     app.import('bower_components/bootstrap/dist/js/bootstrap.js');
     app.import('bower_components/gsap/src/uncompressed/jquery.gsap.js');
     app.import('bower_components/gsap/src/uncompressed/TimelineLite.js');
@@ -37,5 +38,6 @@ module.exports = function(defaults) {
     app.import('bower_components/owlcarousel/owl-carousel/owl.carousel.css');
     app.import('bower_components/owlcarousel/owl-carousel/owl.carousel.css');
     app.import('bower_components/owlcarousel/owl-carousel/owl.theme.css');
+    app.import('bower_components/gsap/src/uncompressed/plugins/TextPlugin.js');
     return app.toTree();
 };

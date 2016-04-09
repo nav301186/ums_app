@@ -3,13 +3,9 @@
     <!-- #F0626A -->
     <h1 class = "logo-word">Bhaduli.</h1>
     <h3>Some awesome tagline.</h3>
-       {{#if isRegistering}}
-       {{#popup-form}}
-       {{/popup-form}}
-       {{/if}}
-    <button id="reg-button" class="btn btn-info no-border-radius" {{action 'showForm'}}>
-  Get Started
-    </button>
+    {{popup-form id='reg-from-2'}}
+    {{button-couple param="#reg-from-2"}}
+
     <div class="container">
       <div class="row">
       <div class="col-md-3"> </div>

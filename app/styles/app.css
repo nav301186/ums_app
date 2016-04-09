@@ -1,16 +1,14 @@
-/* ===================================================
-
-	Icons
-
-=================================================== */
-
 
 html,
 body {
     height: 100%;
+    background-color: #f5f8fa;
 }
 
+.container {
 
+    background-color: #ffffff;
+}
 
 .icon-circle {
 	display: inline-block;
@@ -518,7 +516,7 @@ body {
   }
 
 .slide11, .slide22, .slide33 {
-  min-height: 500px;
+  min-height: 425px;
   background-size: cover;
   background-position: center center;
 
@@ -758,15 +756,12 @@ footer {
 	widows: 100% !important;
 }
 
-#reg-from {
+.reg-log {
   width: 30%;
   margin: auto auto auto 35%;
 }
 
-#reg-button {
-  height: 40px;
-width: 300px;
-}
+
 
 .no-border-radius {
   border-radius: 0 !important;
@@ -907,4 +902,202 @@ font-weight: 400;
 line-height: 1.4;
 font-size: 14px;
 font-style: normal;
+}
+/*#reg-button {
+  height: 45px;
+width: 80%;
+font-size: 20px;
+}*/
+
+#reg-button, #login-button {
+width: 50%;
+font-size: 20px;
+}
+
+.login-reg-container {
+  width: 40%;
+  padding-top: 10px;
+}
+
+.seperator {
+  margin-top: 20px
+}
+#reg-from {
+  display: none;
+  opacity: 0;
+}
+#reg-from-2 {
+  display: none;
+  opacity: 0;
+}
+
+
+/*Profiles*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+.snip1336 {
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  background-color: #141414;
+}
+.snip1336 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.snip1336 img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+.snip1336 figcaption {
+  width: 100%;
+  background-color: #141414;
+  padding: 25px;
+  position: relative;
+}
+.snip1336 figcaption:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent #141414;
+}
+.snip1336 figcaption a {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 47%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.snip1336 figcaption a:hover {
+  opacity: 1;
+}
+.snip1336 .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 25px;
+  z-index: 1;
+  max-width: 90px;
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.snip1336 .follow {
+  margin-right: 4%;
+  border-color: #2980b9;
+  color: #2980b9;
+}
+.snip1336 h2 {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+.snip1336 h2 span {
+  display: block;
+  font-size: 0.5em;
+  color: #2980b9;
+}
+.snip1336 p {
+  margin: 0 0 10px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.profile-bg {
+  background-image: url(slide3.jpg);
+  max-height: 20%;
+}
+
+#profile {
+  background-color: #EDEDED;
+}
+#filters {
+
+}
+#profile-card .card {
+  max-width: 20%;
+}
+#profile-card > img {
+  width: 100%;
+}
+
+.sub-heading {
+  display: block;
+  font-weight: bolder;
+  font-size: smaller;
+}
+
+.lighten {
+  font-weight:lighter;
+}
+.embedded {
+  font-weight: lighter;
+     font-size: medium;
+
+}
+
+.list-group-item {
+  /*border: none;*/
+  border-top: 2px;
+}
+/* Demo purposes only */
+/*body {
+  background-color: #212121;
+}*/
+
+/*#login-form {
+  opacity: 0;
+}*/
+
+.visitor-1 {
+  background-image: url(wed-1.jpg);
+}
+.visitor-2 {
+  background-image: url(wed-2.jpg);
+}
+.visitor-3 {
+  background-image: url(wed-3.jpg);
+}
+.visitor-4 {
+  background-image: url(wed-4.jpg);
+}
+
+.visitor-1,.visitor-2,.visitor-3,.visitor-4 {
+  min-height: 270px;
+  background-size: contain;;
+  background-position: center center;
+  min-width: 318px;
+  background-repeat: no-repeat;
+}
+
+.padding-top-30 {
+  padding-top: 30px;
+}
+
+.card {
+border: 1px solid #d3e0e9 !important;
+
 }
