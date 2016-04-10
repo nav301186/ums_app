@@ -5,6 +5,26 @@ body {
     background-color: #f5f8fa;
 }
 
+.heading-card {
+  background-color: #f5f8fa;
+ height: 60px;
+}
+
+#rv > .card > img {
+    width: 100%;
+}
+
+.card > .label {
+  height: 100%;
+}
+
+.black-bg {
+  background-color: black;
+}
+
+.font-100 {
+  font-size: 100% !important
+}
 .container {
 
     background-color: #ffffff;
@@ -995,16 +1015,7 @@ font-size: 20px;
 .snip1336 figcaption a:hover {
   opacity: 1;
 }
-.snip1336 .profile {
-  border-radius: 50%;
-  position: absolute;
-  bottom: 100%;
-  left: 25px;
-  z-index: 1;
-  max-width: 90px;
-  opacity: 1;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
+
 .snip1336 .follow {
   margin-right: 4%;
   border-color: #2980b9;
@@ -1040,6 +1051,7 @@ font-size: 20px;
 #profile-card .card {
   max-width: 20%;
 }
+
 #profile-card > img {
   width: 100%;
 }
@@ -1058,20 +1070,6 @@ font-size: 20px;
      font-size: medium;
 
 }
-
-.list-group-item {
-  /*border: none;*/
-  border-top: 2px;
-}
-/* Demo purposes only */
-/*body {
-  background-color: #212121;
-}*/
-
-/*#login-form {
-  opacity: 0;
-}*/
-
 .visitor-1 {
   background-image: url(wed-1.jpg);
 }
@@ -1099,5 +1097,55 @@ font-size: 20px;
 
 .card {
 border: 1px solid #d3e0e9 !important;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
+.card-columns {
+  border: 1px solid #d3e0e9 !important;
+  }
+
+border-first {
+    border: 1px solid #d3e0e9 !important;
+}
+.profile-bg {
+  background-image: url(party.jpg);
+min-height: 400px;
+background-repeat: no-repeat;
+background-size: cover;
+ margin-left: auto;
+ margin-right: auto;
+/* float: right; */
+/*margin-left: 100px;*/
+}
+
+.aoh   {
+  max-width: 200px;
+  margin-top: -170px;
+  margin-bottom: 5px;
+  /* border: 3px solid #fff; */
+  /* border-radius: 100%; */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  background-color: #fff;
+  border: 4px solid #fff;
+  border-radius: 2px;
+}
+
+#about-profile {
+  /*margin-top: 40px;*/
+      border-top: 0 !important;
+}
+
+.margin-top-40 {
+  margin-top: 40px;
+}
+
+.font-heading {
+  font-family: helvetica, arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+#basic-info {
+  margin-bottom: 0;
 }

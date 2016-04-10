@@ -6,7 +6,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('profile');
+  this.route('profile', function() {
+    this.route('userinfo');
+    this.route('educationalinfo');
+    this.route('astroinfo');
+    this.route('otherinfo');
+  });
 });
 
 export default Router;

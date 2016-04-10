@@ -39,5 +39,7 @@ module.exports = function(defaults) {
     app.import('bower_components/owlcarousel/owl-carousel/owl.carousel.css');
     app.import('bower_components/owlcarousel/owl-carousel/owl.theme.css');
     app.import('bower_components/gsap/src/uncompressed/plugins/TextPlugin.js');
+    app.import('bower_components/gsap/src/uncompressed/plugins/TextPlugin.js');
+    app.import('bower_components/font-awesome/css/font-awesome.css');
     return app.toTree();
 };
