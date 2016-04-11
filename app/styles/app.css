@@ -21,6 +21,13 @@ body {
 .black-bg {
   background-color: black;
 }
+.white-bg {
+  background-color: white;
+}
+
+.light-blue-bg {
+  background-color: #2882b5 !important;
+}
 
 .font-100 {
   font-size: 100% !important
@@ -1131,6 +1138,13 @@ background-size: cover;
   border-radius: 2px;
 }
 
+.poh {
+    display: block;
+    max-width: 40px;
+    margin-right: 5%;
+    border-radius: 50%;
+}
+
 #about-profile {
   /*margin-top: 40px;*/
       border-top: 0 !important;
@@ -1145,7 +1159,55 @@ background-size: cover;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
+}
+
 
 #basic-info {
   margin-bottom: 0;
+}
+
+
+#noti_Container {
+    position: relative;
+    margin-top: 4px;
+    height: 16px;
+    display: inline-block;
+    right: 140px;
+}
+
+.noti_bubble {
+    position: absolute;
+    top: -1px;
+    left: 13px;
+    padding: 1px 2px 1px 2px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 0.55em;
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px gray;
+    z-index: 5;
+}
+
+#notification {
+    position: relative;
+    z-index: 1;
+    /* left: -25px; */
+    top: 1px;
+    color: #7B7B7B;
+    cursor: pointer;
+    width: 0;
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.ws:before {
+    content: "\EA2E";
+}
+
+.fa-bell {
+  color: white;
+}
+.verticalLine {
+    border-left: thick solid #ff0000;
 }
