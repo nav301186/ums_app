@@ -41,5 +41,7 @@ module.exports = function(defaults) {
     app.import('bower_components/gsap/src/uncompressed/plugins/TextPlugin.js');
     app.import('bower_components/gsap/src/uncompressed/plugins/TextPlugin.js');
     app.import('bower_components/font-awesome/css/font-awesome.css');
+    app.import('bower_components/bootstrap-select/dist/css/bootstrap-select.css');
+    app.import('bower_components/bootstrap-select/dist/js/bootstrap-select.js');
     return app.toTree();
 };

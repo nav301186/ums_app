@@ -74,7 +74,7 @@ body {
 
 
 .icon {
-	background-repeat: none;
+	background-repeat: no-repeat;;
 	background-image: url('sprites.png');
 	position: relative;
 	margin-right: 20px;
@@ -123,7 +123,7 @@ body {
 		height: 42px;
 	}
 
-		.icon.icon-blog {
+		.icon .icon-blog {
 			background-position: -101px -105px;
 		}
 
@@ -302,7 +302,6 @@ body {
 	}
 
 
-// Customer icons
 
 	.icon-salesforce-cloud {
 		display: block;
@@ -319,13 +318,6 @@ body {
 		width: 104px;
 		height: 104px;
 		position: relative;
-
-		@media only screen and (-webkit-min-device-pixel-ratio: 2),
-		only screen and (min-device-pixel-ratio: 2) {
-			background-image: url('#{$cloudfront}assets/img/sprites/customer-sprites.png') !important;
-			background-size: 104px 122px;
-		}
-
 	}
 
 	.icon.icon-video-player-sm {
@@ -338,13 +330,6 @@ body {
 		vertical-align: middle;
 		top: -2px;
 		margin-right: 8px;
-
-		@media only screen and (-webkit-min-device-pixel-ratio: 2),
-		only screen and (min-device-pixel-ratio: 2) {
-			background-image: url('#{$cloudfront}assets/img/sprites/customer-sprites.png') !important;
-			background-size: 104px 122px;
-		}
-
 	}
 
 
@@ -370,78 +355,9 @@ body {
 
 	}
 
-	/* ! Carousel logos */
-
-	.logo-slider {
-		width: 150px;
-		height: 70px;
-
-		&.logo-slider-munchery {
-			background-position: -10px -10px;
-		}
-
-		&.logo-slider-hotel-tonight,
-		&.logo-slider-hoteltonight {
-			background-position: -170px -10px;
-		}
-
-		&.logo-slider-asana {
-			background-position: -330px -10px;
-		}
-
-		&.logo-slider-soundcloud {
-			background-position: -490px -10px;
-		}
-
-		&.logo-slider-one-kings-lane {
-			background-position: -650px -10px;
-		}
-
-		&.logo-slider-luxe {
-			background-position: -810px -10px;
-		}
-
-	}
-
 	.logo-feature {
 		width: 310px;
 		height: 210px;
-
-		&.logo-feature-munchery {
-			background-position: -10px -90px;
-		}
-
-		&.logo-feature-hotel-tonight,
-		&.logo-feature-hoteltonight {
-			background-position: -330px -90px;
-		}
-
-		&.logo-feature-asana {
-			background-position: -650px -90px;
-		}
-
-		&.logo-feature-soundcloud {
-			background-position: -10px -310px;
-		}
-
-		&.logo-feature-one-kings-lane {
-			background-position: -330px -310px;
-		}
-
-		&.logo-feature-luxe {
-			background-position: -650px -310px;
-		}
-
-		&.logo-feature-vimeo {
-			background-position: -10px -530px;
-		}
-
-	}
-
-	h2 {
-
-
-
 	}
 
   .logo-word {
@@ -459,18 +375,6 @@ body {
 .blue-border {
   border : 1px solid skyblue;
 }
-
-	/*.btn, .main-menu, .filter {
-	  font-family: 'Yanone Kaffeesatz', sans-serif;
-	  text-transform: uppercase;
-	  letter-spacing: 2px;
-	  font-weight: 400;
-	}*/
-  /*.navbar {
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
-}*/
 
 .navbar li { color: #000 }
 
@@ -958,92 +862,6 @@ font-size: 20px;
   opacity: 0;
 }
 
-
-/*Profiles*/
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
-.snip1336 {
-  font-family: 'Roboto', Arial, sans-serif;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 230px;
-
-  width: 100%;
-  color: #ffffff;
-  text-align: left;
-  line-height: 1.4em;
-  background-color: #141414;
-}
-.snip1336 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-.snip1336 img {
-  max-width: 100%;
-  vertical-align: top;
-  opacity: 0.85;
-}
-.snip1336 figcaption {
-  width: 100%;
-  background-color: #141414;
-  padding: 25px;
-  position: relative;
-}
-.snip1336 figcaption:before {
-  position: absolute;
-  content: '';
-  bottom: 100%;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 55px 0 0 400px;
-  border-color: transparent transparent transparent #141414;
-}
-.snip1336 figcaption a {
-  padding: 5px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-size: 0.7em;
-  text-transform: uppercase;
-  margin: 10px 0;
-  display: inline-block;
-  opacity: 0.65;
-  width: 47%;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-.snip1336 figcaption a:hover {
-  opacity: 1;
-}
-
-.snip1336 .follow {
-  margin-right: 4%;
-  border-color: #2980b9;
-  color: #2980b9;
-}
-.snip1336 h2 {
-  margin: 0 0 5px;
-  font-weight: 300;
-}
-.snip1336 h2 span {
-  display: block;
-  font-size: 0.5em;
-  color: #2980b9;
-}
-.snip1336 p {
-  margin: 0 0 10px;
-  font-size: 0.8em;
-  letter-spacing: 1px;
-  opacity: 0.8;
-}
-
 .profile-bg {
   background-image: url(slide3.jpg);
   max-height: 20%;
@@ -1139,10 +957,13 @@ background-size: cover;
 }
 
 .poh {
-    display: block;
-    max-width: 40px;
+    max-width: 30px;
+    width: 100%;
+    height: 80%;
     margin-right: 5%;
     border-radius: 50%;
+    margin: 0;
+    padding: 0;
 }
 
 #about-profile {
@@ -1172,12 +993,11 @@ background-size: cover;
     margin-top: 4px;
     height: 16px;
     display: inline-block;
-    right: 140px;
 }
 
 .noti_bubble {
-    position: absolute;
-    top: -1px;
+    position: relative;
+    top: -30px;
     left: 13px;
     padding: 1px 2px 1px 2px;
     background-color: red;
@@ -1208,6 +1028,16 @@ background-size: cover;
 .fa-bell {
   color: white;
 }
-.verticalLine {
-    border-left: thick solid #ff0000;
+.search-title {
+  color: #888;
+font-size: 14px;
+/*height: 100%;*/
+}
+
+.inline-block {
+  display: inline-block !important;
+}
+
+#selfie-bar {
+  background-color: inherit;
 }
