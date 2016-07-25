@@ -2,9 +2,10 @@
   <a class="navbar-brand" href="#">Bhaduli</a>
   <div class="nav navbar-nav">
    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-   <a class="nav-item nav-link" href="#">Features</a>
-   <a class="nav-item nav-link" href="#">Pricing</a>
-   <a class="nav-item nav-link" href="#">About</a>
+   <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#filter-panel">
+           <span class="glyphicon glyphicon-cog"></span> Advanced Search
+       </button>
+
    <div id="selfie-bar" class="container inline-block pull-right">
 <div class="row">
    <img class="poh col-xs-4" src="assets/face6.jpg">
@@ -28,3 +29,4 @@
 
  </div>
 </nav>
+{{filter-panel}}
