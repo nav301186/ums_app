@@ -12,6 +12,7 @@ Router.map(function() {
     this.route('astroinfo');
     this.route('otherinfo');
   });
+  this.route('notifications');
 });
 
 export default Router;

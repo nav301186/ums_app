@@ -1044,3 +1044,12 @@ font-size: 14px;
 #filter-panel {
   margin-top: 40px;
 }
+
+
+#notifications {
+  margin-top: 80px;
+}
+
+.notification-row {
+  padding: 20px !important;
+}
