@@ -943,6 +943,17 @@ background-size: cover;
 /*margin-left: 100px;*/
 }
 
+.other-bg {
+  background-image: url(party-4.jpg);
+min-height: 400px;
+background-repeat: no-repeat;
+background-size: cover;
+ margin-left: auto;
+ margin-right: auto;
+/* float: right; */
+/*margin-left: 100px;*/
+}
+
 .aoh   {
   max-width: 200px;
   margin-top: -170px;

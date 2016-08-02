@@ -13,6 +13,7 @@ Router.map(function() {
     this.route('otherinfo');
   });
   this.route('notifications');
+  this.route('other');
 });
 
 export default Router;
