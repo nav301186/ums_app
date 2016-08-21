@@ -20,28 +20,24 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+
     app.import('bower_components/tether/dist/css/tether.css');
     app.import('bower_components/tether/dist/js/tether.js');
     app.import('bower_components/bootstrap/dist/css/bootstrap.css');
     app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+    app.import('bower_components/bootstrap/bower_components/jquery/dist/jquery.js');
     app.import('bower_components/gsap/src/uncompressed/jquery.gsap.js');
+    app.import('bower_components/jquery/dist/jquery.js');
     app.import('bower_components/gsap/src/uncompressed/TimelineLite.js');
     app.import('bower_components/gsap/src/uncompressed/TimelineMax.js');
     app.import('bower_components/gsap/src/uncompressed/TweenMax.js');
     app.import('bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js');
     app.import('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js');
     app.import('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js');
-    app.import('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js');
     app.import('bower_components/gsap/src/uncompressed/plugins/ScrollToPlugin.js');
-    app.import('bower_components/ihover/src/ihover.css');
     app.import('bower_components/owlcarousel/owl-carousel/owl.carousel.js');
     app.import('bower_components/owlcarousel/owl-carousel/owl.carousel.css');
-    app.import('bower_components/owlcarousel/owl-carousel/owl.carousel.css');
     app.import('bower_components/owlcarousel/owl-carousel/owl.theme.css');
-    app.import('bower_components/gsap/src/uncompressed/plugins/TextPlugin.js');
-    app.import('bower_components/gsap/src/uncompressed/plugins/TextPlugin.js');
     app.import('bower_components/font-awesome/css/font-awesome.css');
-    app.import('bower_components/bootstrap-select/dist/css/bootstrap-select.css');
-    app.import('bower_components/bootstrap-select/dist/js/bootstrap-select.js');
     return app.toTree();
 };

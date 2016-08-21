@@ -9,6 +9,7 @@ export default Ember.Component.extend({
 
   actions: {
     showRegForm(id){
+       console.log(id);
       TweenLite.fromTo($(id) , 2, {opacity:0}, {opacity:1,display:'block'});
       $("#reg-button").text("Sign up");
     },

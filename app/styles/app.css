@@ -14,7 +14,7 @@ body {
     width: 100%;
 }
 
-.card > .label {
+.card > .tag {
   height: 100%;
 }
 
@@ -550,7 +550,7 @@ font-weight: 400;
 /*-------------------------------------------------------------------------------------------------------*/
 
 .section-feature {
-	padding: 4.79em 0px 6.15em;
+	padding: 4.79em 0px 1.15em;
 }
 #with-background {
 	background: url(slider-1.jpg) no-repeat fixed 0px 50px /cover ;
@@ -816,7 +816,7 @@ letter-spacing: .015em;
 }
 
 .padding-30  {
-  padding-top: 30vh;
+  padding-top: 3em;
 }
 
 .section-title {
@@ -1063,4 +1063,8 @@ font-size: 14px;
 
 .notification-row {
   padding: 20px !important;
+}
+
+.btn {
+    margin: 2px;
 }
