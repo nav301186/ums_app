@@ -1,9 +1,10 @@
 <div id="login-form">
 <div class="container-fluid carousel-overlay text-xs-center">
   <!-- #F0626A -->
-  <h1 class = "logo-word">Bhaduli.</h1>
-  <h3>Some awesome tagline.</h3>
-    {{popup-form id='reg-from'}}
-    {{button-couple param="#reg-from"}}
+  <h1 id="logo" class = "logo-word">Bhaduli.</h1>
+  <h3 id="tagline">Some awesome tagline.</h3>
+    {{popup-form id='reg-from' user=user}}
+    {{popup-age id='popup-age' user=user}}
+    {{button-couple param="#reg-from" createUser=(route-action 'createUser')}}
 </div>
 </div>

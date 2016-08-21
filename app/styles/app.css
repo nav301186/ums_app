@@ -861,6 +861,10 @@ font-size: 20px;
   display: none;
   opacity: 0;
 }
+#popup-age {
+  display: none;
+  opacity: 0;
+}
 
 .profile-bg {
   background-image: url(slide3.jpg);

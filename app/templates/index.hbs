@@ -24,7 +24,8 @@
             </div>
         </div>
     </div>
-    {{#overlay-text}} {{/overlay-text}} {{#arrow-slide}} {{/arrow-slide}}
+    {{overlay-text user=model createUser=(route-action 'createUser'}}
+    {{arrow-slide}}
     <!--
     Controls --> <a class="left carousel-control" href="#myCarousel" data-slide="prev">
 
