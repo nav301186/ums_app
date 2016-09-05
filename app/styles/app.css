@@ -866,6 +866,10 @@ font-size: 20px;
   opacity: 0;
 }
 
+#login {
+  display: none;
+  opacity: 0;
+}
 .profile-bg {
   background-image: url(slide3.jpg);
   max-height: 20%;

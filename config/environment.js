@@ -5,12 +5,6 @@ module.exports = function(environment) {
     modulePrefix: 'ums-app',
 
     environment: environment,
-    firebase: {
-    apiKey: 'vxrjelDgBuAnF6eXzatdAITTbSTeEwyU1OXstkpF',
-    authDomain: 'bhadoli.firebaseapp.com',
-    databaseURL: 'https://bhadoli.firebaseio.com/',
-    storageBucket: 'bhadoli.appspot.com',
-  },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -25,6 +19,31 @@ module.exports = function(environment) {
       // when it is created
     }
   };
+  ENV['ember-simple-auth'] = {
+  authorizer: 'simple-auth-authorizer:token',
+  crossOriginWhitelist: ['*']
+};
+
+ENV['ember-simple-auth-token'] = {
+  refreshAccessTokens: true,
+  timeFactor: 1000,
+  refreshLeeway: 300, // Refresh the token 5 minutes (300s) before it expires.
+  serverTokenEndpoint: 'https://localhost:4443/api/authenticate',
+  crossOriginWhitelist:[
+     'https://localhost:4443/api/authenticate'
+    ],
+  identificationField: 'email',
+  passwordField: 'password',
+  tokenPropertyName: 'token',
+  authorizationPrefix: 'Bearer ',
+  authorizationHeaderName: 'Authorization',
+
+  // headers: {},
+};
+ENV.contentSecurityPolicy = {
+  // ... other stuff here
+  'connect-src': "'self' http://localhost:4443"
+};
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
@@ -32,6 +51,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+
   }
 
   if (environment === 'test') {
