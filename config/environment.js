@@ -19,8 +19,9 @@ module.exports = function(environment) {
       // when it is created
     }
   };
+
   ENV['ember-simple-auth'] = {
-  authorizer: 'simple-auth-authorizer:token',
+  authorizer: 'authorizer:custom',
   crossOriginWhitelist: ['*']
 };
 
@@ -35,7 +36,6 @@ ENV['ember-simple-auth-token'] = {
   identificationField: 'email',
   passwordField: 'password',
   tokenPropertyName: 'token',
-  authorizationPrefix: 'Bearer ',
   authorizationHeaderName: 'Authorization',
 
   // headers: {},
