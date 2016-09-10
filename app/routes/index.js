@@ -1,8 +1,9 @@
 import Ember from 'ember';
-
-export default Ember.Route.extend({
+import ApplicationRouteMixin from 'ember-simple-auth/mixins/application-route-mixin';
+export default Ember.Route.extend(ApplicationRouteMixin,{
 
   session: Ember.inject.service(),
+  currentUser: Ember.inject.service(),
 
   model() {
     var model = this.store.createRecord('user');
@@ -27,10 +28,8 @@ export default Ember.Route.extend({
 
      this.get('session').authenticate(authenticator, credentials).then((result) => {
        console.log(result);
-       this.store.queryRecord('user', { name: "Peter" }).then((user) => {
-         this.get('session').set('user', user)
-         this.transitionTo('profile');
-        });
+      // this.get('currentUser').load();
+      this.transitionTo('profile');
     },(reason) => {
       console.log(reason);
     });

@@ -1,12 +1,18 @@
 import Ember from 'ember';
 const { service } = Ember.inject;
-import AuthenticatedRouteMixin from 'ember-simple-auth/mixins/authenticated-route-mixin';
+import ApplicationRouteMixin from 'ember-simple-auth/mixins/application-route-mixin';
 
-export default Ember.Route.extend ({
-  session: service('session'),
+export default Ember.Route.extend (ApplicationRouteMixin,{
+  store: service(),
+  currentUser: service(),
+
+beforeModel: function(){
+    return this.get('currentUser').load();
+},
 
   model: function() {
-      // return this.session.get('user');
+      let user = this.get('store').get('user');
+      return user;
   },
 
   // afterModel(model, transition) {
