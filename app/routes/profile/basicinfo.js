@@ -5,19 +5,14 @@ import ApplicationRouteMixin from 'ember-simple-auth/mixins/application-route-mi
 export default Ember.Route.extend (ApplicationRouteMixin,{
   store: service(),
   currentUser: service(),
-//
+
 // beforeModel: function(){
-//     return this.get('currentUser').load();
+//     return this.get('currentUser').loadBasicInfo();
 // },
 
   model: function() {
-    return this.get('store').find('user','me');
-  },
-
-
-    setupController(controller, model) {
-      controller.set('model', model);
-      // controller.set('books', model.books);
-      // controller.set('authors', model.authors);
-    }
+    return this.get('store').findRecord('basicinfo', 'me');
+      // let basicInfo = this.get('store').get('basicinfo');
+      // return basicInfo;
+  }
 });
