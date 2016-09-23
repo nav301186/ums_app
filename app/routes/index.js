@@ -29,7 +29,7 @@ export default Ember.Route.extend(ApplicationRouteMixin,{
      this.get('session').authenticate(authenticator, credentials).then((result) => {
        console.log(result);
       // this.get('currentUser').load();
-      this.transitionTo('profile');
+      this.transitionTo('profile.basicinfo');
     },(reason) => {
       console.log(reason);
     });
