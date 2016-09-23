@@ -9,4 +9,5 @@ export default DS.Model.extend({
   city: attr(),
   hometown: attr(),
   user_id: attr(),
+  current_city: attr()
 });

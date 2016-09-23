@@ -17,7 +17,7 @@
             {{#link-to 'profile.basicinfo' class="nav-link" tagname="li"}}Basic information and Contact Details {{/link-to}}
           </li>
           <li class="nav-item">
-              {{#link-to 'profile.educationalinfo' class="nav-link" tagname="li"}}Educational Details{{/link-to}}
+              {{#link-to 'profile.educational-detail' class="nav-link" tagname="li"}}Educational Details{{/link-to}}
           </li>
           <li class="nav-item">
               {{#link-to 'profile.astroinfo' class="nav-link" tagname="li" href=false}}Astro Details{{/link-to}}
@@ -40,6 +40,7 @@
     </div>
   </div>
   </div>
+  {{user-notifications}}
   {{recent-visitors}}
   {{requests-com}}
 </div>
