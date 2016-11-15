@@ -1,0 +1,32 @@
+<nav class="navbar  navbar-dark  navbar-fixed-top light-blue-bg  bg-faded">
+  <a class="navbar-brand" href="#">Bhaduli</a>
+  <div class="nav navbar-nav">
+   <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+   <!-- <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#filter-panel"> -->
+   <button type="button" class="btn btn-primary" {{action "search"}}>
+           <span class="glyphicon glyphicon-cog"></span> Advanced Search</button>
+
+   <div id="selfie-bar" class="float-xs-right">
+<div class="row">
+   <img class="poh col-xs-4" src="assets/face6.jpg">
+   <div id="noti_Container" class="float-xs-right col-xs-4">
+   <i id="notification" class="fa fa-bell fa-lg float-xs-center white-bg"></i>
+   <div class="noti_bubble">2</div>
+ </div>
+   <div class="dropdown inline-block col-xs-4">
+     <span id="dropdownMenu1" data-toggle="dropdown"  aria-expanded="false">
+      <i class="fa fa-cog fa-2x" aria-hidden="true"></i>
+    </span>
+     <div class="dropdown-menu dropdown-menu-right" aria-tagledby="dropdownMenu1">
+       <a class="dropdown-item" href="#">Action</a>
+       <a class="dropdown-item" href="#">Another action</a>
+       <a class="dropdown-item" href="#">Something else here</a>
+     </div>
+   </div>
+   </div>
+   <!-- <a class="btn btn-danger-outline btn-sm float-xs-right" href="#" role="button">Logout</a> -->
+ </div>
+
+ </div>
+</nav>
+<!-- {{filter-panel}} -->

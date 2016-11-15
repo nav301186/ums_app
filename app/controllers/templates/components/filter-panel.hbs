@@ -1,0 +1,51 @@
+<div class="collapse" id="filter-panel">
+  <div class="card card-block">
+    <form class="form-inline" role="form">
+      <div class="row">
+                          <div class="form-group col-md-2">
+                             <tag class="filter-col" style="margin-right:0;" for="pref-perpage">Age:</tag>
+                             <select id="pref-perpage" class="form-control">
+                               <!-- get the selected values$('#gridSize > option:selected').text() -->
+                                 <option value="2">20-25</option>
+                                 <option value="3">25-27</option>
+                                 <option value="4">27-30</option>
+                                 <option value="5">30-35</option>
+                                 <option value="6">35-40</option>
+                                 <option value="7">45-50</option>
+                             </select>
+                         </div> <!-- form group [rows] -->
+                         <div class="form-group col-md-2">
+                            <tag class="filter-col" style="margin-right:0;" for="pref-perpage">Looking for:</tag>
+                            <select id="pref-perpage" class="form-control">
+                                <option value="2">Bride</option>
+                                <option value="3">Groom</option>
+                            </select>
+                        </div> <!-- form group [rows] -->
+                         <!-- <div class="form-group col-md-3">
+                             <tag class="filter-col" style="margin-right:0;" for="pref-search">Search:</tag>
+                             <input type="text" class="form-control input-sm" id="pref-search">
+                         </div><!-- form group [search] -->
+                          <!-- <div class="form-group col-md-3">
+                             <tag class="filter-col" style="margin-right:0;" for="pref-orderby">Order by:</tag>
+                             <select id="pref-orderby" class="form-control">
+                                 <option>Descendent</option>
+                             </select>
+                         </div> <!-- form group [order by] -->
+                         <!-- <div class="form-group col-md-2">
+                             <div class="checkbox" style="margin-left:10px; margin-right:10px;">
+                                 <tag><input type="checkbox"> Ingested</tag>
+                             </div>
+                             <div class="checkbox" style="margin-left:10px; margin-right:10px;">
+                                 <tag><input type="checkbox"> Automated</tag>
+                             </div>
+                         </div> -->
+                         <div class="form-group col-md-2">
+                             <button type="submit" class="btn btn-secondary filter-col" {{action "search"}}>
+                                 <span class="glyphicon glyphicon-record"></span> Search
+                             </button>
+                         </div>
+                       </div>
+
+                     </form>
+  </div>
+</div>
