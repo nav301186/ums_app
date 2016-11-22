@@ -4,6 +4,7 @@
     "window",
     "-Promise"
   ],
+    "esversion": 6,
   "browser": true,
   "boss": true,
   "curly": true,

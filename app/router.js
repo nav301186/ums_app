@@ -14,7 +14,7 @@ Router.map(function() {
     this.route('otherinfo');
   });
   // this.route('profile',{path: '/profile/:user_name'});
-  this.route('notifications');
+  // this.route('notifications');
   // this.route('other');
 });
 

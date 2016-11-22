@@ -26,13 +26,13 @@
             </div>
 
         </div>
-        <div class="row">
-          {{user-notifications}}
-        </div>
-        <div class="row">
-          <!-- {{recent-visitors}} -->
-        </div>
         <!-- <div class="row">
-          {{requests-com}}
+          {{user-notifications model=model.notifications}}
         </div> -->
+        <!-- {{model.basicinfo.Name}}
+        {{model.basicinfo.age}} -->
+        {{#each model.notifications as |notification|}}
+          <li>Hello, {{notification.type}}!</li>
+        {{/each}}
+
   </div>
