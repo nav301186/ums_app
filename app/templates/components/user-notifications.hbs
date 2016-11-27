@@ -1,4 +1,5 @@
-<div class="container-fluid  margin-top-40">
+{{nav-bar}}
+<div id="notifications" class="container-fluid  margin-top-40">
   <div class="row">
     <div class="col-md-2">
 
@@ -8,27 +9,12 @@
       <div class="card-block">
         <h4 class="card-title">Notifications</h4>
       </div>
+
       <ul class="list-group list-group-flush">
-        {{#each model as |notification|}}
-        {{#notification-item model=notification}}
-        {{/notification-item}}
-        {{/each}}
+          {{#each model as |notification|}}
+            {{notification-item sender=notification.intiator type=notification.type}}
+          {{/each}}
 
-
-        <!-- <li class="list-group-item notification-row"><i class="fa fa-inbox" aria-hidden="true"></i>
-          You have a <a><strong>message</strong></a> from <a><strong>Lilian</strong></a></li>
-        <li class="list-group-item notification-row"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
-          <a><strong>David Gomcha</strong></a> sent you a <a><strong>request</strong></a></li>
-        <li class="list-group-item notification-row"><i class="fa fa-globe" aria-hidden="true"></i>
-          <a><strong>David Gomcha</strong></a> recently viewed your profile</li>
-        <li class="list-group-item notification-row"><i class="fa fa-info-circle" aria-hidden="true"></i>
-            <a><strong>Lady of Lake</strong></a> sent you a <a><strong>request</strong></a></li>
-        <li class="list-group-item notification-row"><i class="fa fa-info-circle" aria-hidden="true"></i>
-            <a><strong>Laliah Gomcha</strong></a> sent you a <a><strong>request</strong></a></li>
-        <li class="list-group-item notification-row"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
-            <a><strong>Ajin Gomcha</strong></a> recently viewed your profile</li>
-        <li class="list-group-item notification-row"><i class="fa fa-heartbeat" aria-hidden="true"></i>
-          <a><strong>Sobaru kun</strong></a> rejected your <a><strong>request</strong></a></li> -->
       </ul>
     </div>
   </div>

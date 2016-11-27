@@ -1067,7 +1067,12 @@ font-size: 14px;
 
 #notifications {
   margin-top: 80px;
+  font-weight: 300;
+  letter-spacing: 0;
 }
+
+font-weight: 300;
+letter-spacing: 0;
 
 .notification-row {
   padding: 20px !important;
@@ -1075,4 +1080,13 @@ font-size: 14px;
 
 .btn {
     margin: 2px;
+}
+
+.full-width {
+  width: 100%
+}
+
+a {
+    color: #3097d1;
+    text-decoration: none;
 }
